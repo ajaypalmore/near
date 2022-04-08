@@ -1,0 +1,270 @@
+[
+	{
+		"line": 1,
+		"elements": [
+			{
+				"start_timestamp": "2022-03-12T08:15:43.794Z",
+				"line": 7,
+				"name": "User successfully creates Mtvrs account and links Near account to land on home page",
+				"description": "",
+				"id": "account-creation;user-successfully-creates-mtvrs-account-and-links-near-account-to-land-on-home-page",
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 27370000000,
+							"status": "passed"
+						},
+						"line": 9,
+						"name": "User has a Near account in the web browser",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.Open_Near_Account_Page()"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//a[contains(text(),'Sign Up')])[0]\"}\n  (Session info: chrome=99.0.4844.51)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.2', revision: '9a5a329c5a'\nSystem info: host: 'DESKTOP-EAB2Q95', ip: '192.168.97.215', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6d9b7c6b507fd42aec8c6247558c7297, findElement {using=xpath, value=(//a[contains(text(),'Sign Up')])[0]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61243/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6d9b7c6b507fd42aec8c6247558c7297\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat com.qa.StepDefinations.Login.Verify_Sign_Page(Login.java:32)\r\n\tat ✽.User is on the Sign-in page(file:///C:/workspace/near/src/main/java/com/qa/Features/Login.feature:10)\r\n",
+							"duration": 52000000,
+							"status": "failed"
+						},
+						"line": 10,
+						"name": "User is on the Sign-in page",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.Verify_Sign_Page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 1000000,
+							"status": "skipped"
+						},
+						"line": 11,
+						"name": "User Clicks on Sign Up",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.User_Clicks_Sign_Up()"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 12,
+						"name": "User lands on How it works page",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.User_lands_on_How_it_works_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 6000000,
+							"status": "skipped"
+						},
+						"line": 13,
+						"name": "User Clicks on CREATE YOUR ACCOUNT button",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.User_Create_Account_Click()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 14,
+						"name": "User lands on Welcome to Mtvrs page",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.Welcome_MTVRS()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 15,
+						"name": "User enters valid email address \"test@gmail.com\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "test@gmail.com",
+									"offset": 33
+								}
+							],
+							"location": "com.qa.StepDefinations.Login.user_enter_vaild_email(java.lang.String)"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 16,
+						"name": "User clicks on Continue",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.user_clicks_continue()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 17,
+						"name": "User enters a valid username \"ajaytest\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "ajaytest",
+									"offset": 30
+								}
+							],
+							"location": "com.qa.StepDefinations.Login.user_enters_username(java.lang.String)"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 18,
+						"name": "User clicks on Continue",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.user_clicks_continue()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 19,
+						"name": "User enters valid password \"ajay#1234\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "ajay#1234",
+									"offset": 28
+								}
+							],
+							"location": "com.qa.StepDefinations.Login.user_enters_password(java.lang.String)"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 20,
+						"name": "User enters correct confirm password \"ajay#1234\"",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 1000000,
+							"status": "skipped"
+						},
+						"line": 21,
+						"name": "User clicks on Connect your NEAR account",
+						"match": {
+							"location": "com.qa.StepDefinations.Login.user_clicks_Connect_your_NEAR_account()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 22,
+						"name": "User lands on Near Web Wallet",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 23,
+						"name": "User selects a Near address \"top town\"",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 2000000,
+							"status": "skipped"
+						},
+						"line": 24,
+						"name": "User clicks on Next on Connect with NEAR page",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 25,
+						"name": "User clicks on Connect on Connecting with account page",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 26,
+						"name": "User lands on Games page",
+						"match": {
+							
+						},
+						"keyword": "Then "
+					},
+					{
+						"result": {
+							"duration": 1000000,
+							"status": "skipped"
+						},
+						"line": 27,
+						"name": "User is shown \"ajaytest\"",
+						"match": {
+							
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"status": "skipped"
+						},
+						"line": 28,
+						"name": "User is shown \"top town\"",
+						"match": {
+							
+						},
+						"keyword": "And "
+					}
+				]
+			}
+		],
+		"name": "Account Creation",
+		"description": "As a user \nI want to create account and link my Near account \nSo that I can get access to the platform ",
+		"id": "account-creation",
+		"keyword": "Feature",
+		"uri": "file:src/main/java/com/qa/Features/Login.feature",
+		"tags": []
+	}
+]
